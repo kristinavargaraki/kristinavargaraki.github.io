@@ -15,17 +15,17 @@ div {
 }
 
 #b3 {
-    width: calc(14% - 48px);
+    width: 14%;
     float: left;
 }
 
 #b4 {
-    width: calc(28.7% - 48px);
+    width: 28.7%;
     float: left;
 }
 
 #b5{
-    width: calc(5.3% - 48px);
+    width: 57.3%;
     float: left;
 }
 
