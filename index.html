@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" onclick="myfunc()">
+    <div id="container">
         <div>
             <table>
                 <tr>
@@ -47,10 +47,9 @@
                 </tr>
             </table>
         </div>
-        <div id="b6">&copy;Варгараки, 2018</div>
-    </div>  
-    
-    <script>
+        <div id="b6">&copy;Варгараки, 2018
+        
+        <script>
     
         function myfunc() {
             
@@ -60,11 +59,22 @@
                  b3 = container_width*0.1,
                  b4 = container_width*0.29;
             
-            pidor.style.width = container_width - b3 - b4 - 48 + "px";
+            
+            document.getElementById('b5').style.width = Number(getComputedStyle(document.getElementById('container')).width.replace('px', '')) - Number(getComputedStyle(document.getElementById('container')).width.replace('px', ''))*0.1 - Number(getComputedStyle(document.getElementById('container')).width.replace('px', ''))*0.29 - 78 + 'px';document.getElementById('b5').style.width = Number(getComputedStyle(document.getElementById('container')).width.replace('px', '')) - Number(getComputedStyle(document.getElementById('container')).width.replace('px', ''))*0.1 - Number(getComputedStyle(document.getElementById('container')).width.replace('px', ''))*0.29 - 78 + 'px';
+            setTimeout(function() {
+                document.getElementById("b6").innerHTML = "&copyВаргараки, 2018";   
+            },0)
+            
             
         }
-        
+        HTMLBodyElement.onload = myfunc()
+            
     </script>
+        
+        
+        </div>
+    </div>  
+    
     
 </body>    
 </html>
