@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
+    <div id="container" onclick="myfunc()">
         <div>
             <table>
                 <tr>
@@ -49,5 +49,22 @@
         </div>
         <div id="b6">&copy;Варгараки, 2018</div>
     </div>  
+    
+    <script>
+    
+        function myfunc() {
+            
+             var pidor = document.getElementById("b5"),
+                 container = document.getElementById("container"),
+                 container_width = Number(getComputedStyle(container).width.replace("px", "")),
+                 b3 = container_width*0.1,
+                 b4 = container_width*0.29;
+            
+            pidor.style.width = container_width - b3 - b4 - 48 + "px";
+            
+        }
+        
+    </script>
+    
 </body>    
 </html>
