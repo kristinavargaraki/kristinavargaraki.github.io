@@ -1,0 +1,34 @@
+div {
+    border: 3px pink solid;
+    margin: 5px;
+    background-color: skyblue;
+}
+
+#container {
+    background-color: yellow;
+    clear: both;
+}
+
+.grey_bg {
+    background-color: grey;
+    padding: 5px;
+}
+
+#b3 {
+    width: 10%;
+    float: left;
+}
+
+#b4 {
+    width: 35%;
+    float: left;
+}
+
+#b5{
+    width: 49.81%;
+    float: left;
+}
+
+#b6 {
+    clear: both;
+}
