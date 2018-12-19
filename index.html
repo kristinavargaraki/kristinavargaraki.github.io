@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container" onclick="myfunc()">
+    <div id="container">
         <div>
             <table>
                 <tr>
@@ -31,9 +31,9 @@
             Периметром трикутника називають суму довжин трьох сторін трикутника. Якщо периметр трикутника позначити буквою Р, а довжини сторін ВС, СА і АВ — відповідно, через а, b, с.
         </div>
         <div class="grey_bg" id="b5">
-            <table border="1" cellspacing="0" id="table">
+            <table border="1" cellspacing="0">
                 <tr height="50px">
-                    <th colspan="2" width="600px"><font size="5">Площа трикуника</font></th>
+                    <th colspan="2" style="width{66%}"><font size="5">Площа трикуника</font></th>
                     <td width="300px" align="center"><font size="5"><b>Периметр трикутника</b></font></td>
                 </tr>
                 <tr height="50px">
@@ -48,15 +48,6 @@
             </table>
         </div>
         <div id="b6">&copy;Варгараки, 2018</div>
-    </div>
-    
-    <script>
-    
-        function myfunc() {
-            alert(getComputedStyle(document.getElementById('container')).width);
-        }
-        
-    </script>
-    
+    </div>  
 </body>    
 </html>
