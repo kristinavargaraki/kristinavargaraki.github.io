@@ -31,7 +31,7 @@
             Периметром трикутника називають суму довжин трьох сторін трикутника. Якщо периметр трикутника позначити буквою Р, а довжини сторін ВС, СА і АВ — відповідно, через а, b, с.
         </div>
         <div class="grey_bg" id="b5">
-            <table border="1" cellspacing="0" width="749.138px">
+            <table border="1" cellspacing="0" id="table">
                 <tr height="50px">
                     <th colspan="2" width="600px"><font size="5">Площа трикуника</font></th>
                     <td width="300px" align="center"><font size="5"><b>Периметр трикутника</b></font></td>
@@ -47,7 +47,16 @@
                 </tr>
             </table>
         </div>
-        <div id="b6">&copy;Варгараки, 2018</div>
+        <div id="b6" onclick="myfunc()">&copy;Варгараки, 2018</div>
     </div>
+    
+    <script>
+    
+        function myfunc() {
+            document.getElementById('table').style.width = getComputedStyle(document.getElementById('b5')).width;
+        }
+        
+    </script>
+    
 </body>    
 </html>
