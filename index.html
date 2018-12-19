@@ -53,7 +53,7 @@
     <script>
     
         function myfunc() {
-            document.getElementById('table').style.width = getComputedStyle(document.getElementById('b5')).width;
+            document.getElementById('table').style.width = Number(getComputedStyle(document.getElementById('b5')).width.replace('', ''))-10+'px';
         }
         
     </script>
